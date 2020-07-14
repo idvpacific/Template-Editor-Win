@@ -1,0 +1,27 @@
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\IDV Document Templates.exe.config
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\IDV Document Templates.exe
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\IDV Document Templates.pdb
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\MetroSet UI.dll
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\RestSharp.dll
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\Tulpep.NotificationWindow.dll
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\RestSharp.xml
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.Login.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.Properties.Resources.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T1_AddNewCountry.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.Templates.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.GenerateResource.cache
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CoreCompileInputs.cache
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CopyComplete
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.exe
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.pdb
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\Newtonsoft.Json.dll
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\bin\Debug\Newtonsoft.Json.xml
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T2_AddNewState.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T2_EditSate.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T1_EditCountry.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T3_AddNewDocType.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T3_EditDocType.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T4_AddNewDocument.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.T4_EditDocument.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV_Document_Templates.TemplateBuilder.resources
+E:\Project\13- Document Templates\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.csprojAssemblyReference.cache
