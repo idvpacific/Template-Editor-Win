@@ -455,6 +455,7 @@ namespace IDV_Document_Templates
                                             LB.KeyActive = DigittoBool(RW[12].ToString());
                                             LB.KeyValue = RW[13].ToString();
                                             LB.Similarity = RW[14].ToString();
+                                            LB.OcrIndex = RW[15].ToString();
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -541,6 +542,7 @@ namespace IDV_Document_Templates
                                             LB.KeyActive = DigittoBool(RW[12].ToString());
                                             LB.KeyValue = RW[13].ToString();
                                             LB.Similarity = RW[14].ToString();
+                                            LB.OcrIndex = RW[15].ToString();
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -865,6 +867,7 @@ namespace IDV_Document_Templates
                     P5_T9.Text = "";
                     P5_T10.Text = "";
                     P5_T11.Text = "";
+                    P5_T12.Text = "";
                     P5_C1.Checked = false;
                     P5_C2.Checked = false;
                     FI_TL.Visible = false;
@@ -889,6 +892,7 @@ namespace IDV_Document_Templates
                     P6_T9.Text = "";
                     P6_T10.Text = "";
                     P6_T11.Text = "";
+                    P6_T12.Text = "";
                     P6_C1.Checked = false;
                     P6_C2.Checked = false;
                     BI_TL.Visible = false;
@@ -1081,6 +1085,8 @@ namespace IDV_Document_Templates
                             P5_T10.ForeColor = P5_C1.ForeColor;
                             P5_T11.BackColor = P5_C1.BackgroundColor;
                             P5_T11.ForeColor = P5_C1.ForeColor;
+                            P5_T12.BackColor = P5_C1.BackgroundColor;
+                            P5_T12.ForeColor = P5_C1.ForeColor;
                             PNL_5.Left = 15;
                             PNL_5.Top = 130;
                             PNL_5.Width = this.Width - 30;
@@ -1128,6 +1134,8 @@ namespace IDV_Document_Templates
                             P6_T10.ForeColor = P6_C1.ForeColor;
                             P6_T11.BackColor = P6_C1.BackgroundColor;
                             P6_T11.ForeColor = P6_C1.ForeColor;
+                            P6_T12.BackColor = P6_C1.BackgroundColor;
+                            P6_T12.ForeColor = P6_C1.ForeColor;
                             PNL_6.Left = 15;
                             PNL_6.Top = 130;
                             PNL_6.Width = this.Width - 30;
@@ -1490,6 +1498,7 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V13" + "\": " + "\"" + BooltoDigit(TRSel.KeyActive) + "\",";
                                     JsonBody += "\"" + "V14" + "\": " + "\"" + TRSel.KeyValue + "\",";
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
+                                    JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1587,6 +1596,7 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V13" + "\": " + "\"" + BooltoDigit(TRSel.KeyActive) + "\",";
                                     JsonBody += "\"" + "V14" + "\": " + "\"" + TRSel.KeyValue + "\",";
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
+                                    JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1875,6 +1885,7 @@ namespace IDV_Document_Templates
                 P5_T9.Text = "";
                 P5_T10.Text = "";
                 P5_T11.Text = "";
+                P5_T12.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
                 ObjectLoad = false;
@@ -2039,6 +2050,7 @@ namespace IDV_Document_Templates
                 P5_T9.Text = "";
                 P5_T10.Text = "";
                 P5_T11.Text = "";
+                P5_T12.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
                 if (P5_SelObject != null)
@@ -2054,6 +2066,7 @@ namespace IDV_Document_Templates
                     P5_T9.Text = P5_SelObject.OutputTitle.Trim();
                     P5_T10.Text = P5_SelObject.KeyValue.Trim();
                     P5_T11.Text = P5_SelObject.Similarity;
+                    P5_T12.Text = P5_SelObject.OcrIndex;
                     P5_C1.Checked = P5_SelObject.OutputShow;
                     P5_C2.Checked = P5_SelObject.KeyActive;
                 }
@@ -2430,6 +2443,14 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P5_T12":
+                            {
+                                if (TxVal < 0) { TxVal = 0; }
+                                if (TxVal > 100) { TxVal = 100; }
+                                P5_SelObject.OcrIndex = TxVal.ToString();
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -2461,6 +2482,7 @@ namespace IDV_Document_Templates
                         P5_T9.Text = P5_SelObject.OutputTitle.Trim();
                         P5_T10.Text = P5_SelObject.KeyValue.Trim();
                         P5_T11.Text = P5_SelObject.Similarity;
+                        P5_T12.Text = P5_SelObject.OcrIndex;
                         P5_C1.Checked = P5_SelObject.OutputShow;
                         P5_C2.Checked = P5_SelObject.KeyActive;
                     }
@@ -2615,6 +2637,7 @@ namespace IDV_Document_Templates
                 P6_T9.Text = "";
                 P6_T10.Text = "";
                 P6_T11.Text = "";
+                P6_T12.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
                 ObjectLoad = false;
@@ -2779,6 +2802,7 @@ namespace IDV_Document_Templates
                 P6_T9.Text = "";
                 P6_T10.Text = "";
                 P6_T11.Text = "";
+                P6_T12.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
                 if (P6_SelObject != null)
@@ -2794,6 +2818,7 @@ namespace IDV_Document_Templates
                     P6_T9.Text = P6_SelObject.OutputTitle.Trim();
                     P6_T10.Text = P6_SelObject.KeyValue.Trim();
                     P6_T11.Text = P6_SelObject.Similarity;
+                    P6_T12.Text = P6_SelObject.OcrIndex;
                     P6_C1.Checked = P6_SelObject.OutputShow;
                     P6_C2.Checked = P6_SelObject.KeyActive;
                 }
@@ -3170,6 +3195,14 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P6_T12":
+                            {
+                                if (TxVal < 0) { TxVal = 0; }
+                                if (TxVal > 100) { TxVal = 100; }
+                                P6_SelObject.OcrIndex = TxVal.ToString();
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -3201,6 +3234,7 @@ namespace IDV_Document_Templates
                         P6_T9.Text = P6_SelObject.OutputTitle.Trim();
                         P6_T10.Text = P6_SelObject.KeyValue.Trim();
                         P6_T11.Text = P6_SelObject.Similarity;
+                        P6_T12.Text = P6_SelObject.OcrIndex;
                         P6_C1.Checked = P6_SelObject.OutputShow;
                         P6_C2.Checked = P6_SelObject.KeyActive;
                     }

@@ -132,5 +132,15 @@ namespace IDV_Document_Templates
                 similarity = value;
             }
         }
+
+        private string ocrindex = "1";
+        public string OcrIndex
+        {
+            get { return ocrindex; }
+            set
+            {
+                ocrindex = value;
+            }
+        }
     }
 }

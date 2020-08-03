@@ -170,7 +170,6 @@
             this.P6_T2 = new System.Windows.Forms.TextBox();
             this.P6_T1 = new System.Windows.Forms.TextBox();
             this.P6_Btn_Clear = new MetroSet_UI.Controls.MetroSetButton();
-            this.metroSetLabel33 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetLabel34 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetLabel35 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetLabel36 = new MetroSet_UI.Controls.MetroSetLabel();
@@ -238,6 +237,11 @@
             this.P8_IMG = new System.Windows.Forms.PictureBox();
             this.metroSetDivider14 = new MetroSet_UI.Controls.MetroSetDivider();
             this.metroSetTile11 = new MetroSet_UI.Controls.MetroSetTile();
+            this.P5_T12 = new System.Windows.Forms.TextBox();
+            this.metroSetLabel51 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.P6_T12 = new System.Windows.Forms.TextBox();
+            this.metroSetLabel33 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.metroSetLabel60 = new MetroSet_UI.Controls.MetroSetLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WG)).BeginInit();
             this.PNL_1.SuspendLayout();
@@ -283,7 +287,7 @@
             this.Btn_Countrol.CloseHoverForeColor = System.Drawing.Color.White;
             this.Btn_Countrol.CloseNormalForeColor = System.Drawing.Color.Gray;
             this.Btn_Countrol.DisabledForeColor = System.Drawing.Color.DimGray;
-            this.Btn_Countrol.Location = new System.Drawing.Point(523, 7);
+            this.Btn_Countrol.Location = new System.Drawing.Point(377, 7);
             this.Btn_Countrol.MaximizeBox = true;
             this.Btn_Countrol.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.Btn_Countrol.MaximizeHoverForeColor = System.Drawing.Color.Gray;
@@ -308,7 +312,7 @@
             this.metroSetDivider1.Location = new System.Drawing.Point(15, 90);
             this.metroSetDivider1.Name = "metroSetDivider1";
             this.metroSetDivider1.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider1.Size = new System.Drawing.Size(616, 4);
+            this.metroSetDivider1.Size = new System.Drawing.Size(470, 4);
             this.metroSetDivider1.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider1.StyleManager = this.styleManager1;
             this.metroSetDivider1.TabIndex = 33;
@@ -324,7 +328,7 @@
             this.metroSetDivider2.Location = new System.Drawing.Point(15, 120);
             this.metroSetDivider2.Name = "metroSetDivider2";
             this.metroSetDivider2.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider2.Size = new System.Drawing.Size(616, 4);
+            this.metroSetDivider2.Size = new System.Drawing.Size(470, 4);
             this.metroSetDivider2.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider2.StyleManager = this.styleManager1;
             this.metroSetDivider2.TabIndex = 34;
@@ -337,10 +341,10 @@
             // 
             this.metroSetDivider3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroSetDivider3.Location = new System.Drawing.Point(15, 173);
+            this.metroSetDivider3.Location = new System.Drawing.Point(15, 175);
             this.metroSetDivider3.Name = "metroSetDivider3";
             this.metroSetDivider3.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider3.Size = new System.Drawing.Size(616, 4);
+            this.metroSetDivider3.Size = new System.Drawing.Size(470, 4);
             this.metroSetDivider3.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider3.StyleManager = this.styleManager1;
             this.metroSetDivider3.TabIndex = 35;
@@ -479,7 +483,7 @@
             this.Btn_Close.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Close.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Close.HoverTextColor = System.Drawing.Color.White;
-            this.Btn_Close.Location = new System.Drawing.Point(105, 188);
+            this.Btn_Close.Location = new System.Drawing.Point(-41, 190);
             this.Btn_Close.Name = "Btn_Close";
             this.Btn_Close.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.Btn_Close.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -506,7 +510,7 @@
             this.Btn_Prev.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Prev.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Prev.HoverTextColor = System.Drawing.Color.White;
-            this.Btn_Prev.Location = new System.Drawing.Point(220, 188);
+            this.Btn_Prev.Location = new System.Drawing.Point(74, 190);
             this.Btn_Prev.Name = "Btn_Prev";
             this.Btn_Prev.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.Btn_Prev.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -533,7 +537,7 @@
             this.Btn_Next.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Next.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Next.HoverTextColor = System.Drawing.Color.White;
-            this.Btn_Next.Location = new System.Drawing.Point(371, 188);
+            this.Btn_Next.Location = new System.Drawing.Point(225, 190);
             this.Btn_Next.Name = "Btn_Next";
             this.Btn_Next.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.Btn_Next.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -560,7 +564,7 @@
             this.Btn_Save.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Save.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Btn_Save.HoverTextColor = System.Drawing.Color.White;
-            this.Btn_Save.Location = new System.Drawing.Point(522, 188);
+            this.Btn_Save.Location = new System.Drawing.Point(376, 190);
             this.Btn_Save.Name = "Btn_Save";
             this.Btn_Save.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.Btn_Save.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -582,7 +586,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 188);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 190);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -593,7 +597,7 @@
             // 
             this.LBL_Step_Num.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LBL_Step_Num.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LBL_Step_Num.Location = new System.Drawing.Point(140, 188);
+            this.LBL_Step_Num.Location = new System.Drawing.Point(140, 190);
             this.LBL_Step_Num.Name = "LBL_Step_Num";
             this.LBL_Step_Num.Size = new System.Drawing.Size(26, 23);
             this.LBL_Step_Num.Style = MetroSet_UI.Design.Style.Light;
@@ -608,7 +612,7 @@
             // 
             this.LBL_Step_Count.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LBL_Step_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LBL_Step_Count.Location = new System.Drawing.Point(170, 207);
+            this.LBL_Step_Count.Location = new System.Drawing.Point(170, 209);
             this.LBL_Step_Count.Name = "LBL_Step_Count";
             this.LBL_Step_Count.Size = new System.Drawing.Size(26, 23);
             this.LBL_Step_Count.Style = MetroSet_UI.Design.Style.Light;
@@ -624,7 +628,7 @@
             this.metroSetLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.metroSetLabel11.AutoSize = true;
             this.metroSetLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel11.Location = new System.Drawing.Point(163, 199);
+            this.metroSetLabel11.Location = new System.Drawing.Point(163, 201);
             this.metroSetLabel11.Name = "metroSetLabel11";
             this.metroSetLabel11.Size = new System.Drawing.Size(12, 17);
             this.metroSetLabel11.Style = MetroSet_UI.Design.Style.Light;
@@ -753,7 +757,7 @@
             this.PNL_2.Controls.Add(this.metroSetTile1);
             this.PNL_2.Controls.Add(this.panel1);
             this.PNL_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.PNL_2.Location = new System.Drawing.Point(1199, 148);
+            this.PNL_2.Location = new System.Drawing.Point(1197, 143);
             this.PNL_2.Name = "PNL_2";
             this.PNL_2.Size = new System.Drawing.Size(1104, 550);
             this.PNL_2.TabIndex = 15;
@@ -1588,7 +1592,7 @@
             this.metroSetLabel3.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetLabel3.StyleManager = this.styleManager1;
             this.metroSetLabel3.TabIndex = 20;
-            this.metroSetLabel3.Text = "Maximum number of OCR fields :";
+            this.metroSetLabel3.Text = "Maximum number of OCR lines :";
             this.metroSetLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.metroSetLabel3.ThemeAuthor = "Narwin";
             this.metroSetLabel3.ThemeName = "MetroLite";
@@ -1602,7 +1606,7 @@
             this.metroSetLabel2.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetLabel2.StyleManager = this.styleManager1;
             this.metroSetLabel2.TabIndex = 18;
-            this.metroSetLabel2.Text = "Minumum number of OCR fields :";
+            this.metroSetLabel2.Text = "Minumum number of OCR lines :";
             this.metroSetLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.metroSetLabel2.ThemeAuthor = "Narwin";
             this.metroSetLabel2.ThemeName = "MetroLite";
@@ -1616,7 +1620,7 @@
             this.metroSetLabel1.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetLabel1.StyleManager = this.styleManager1;
             this.metroSetLabel1.TabIndex = 16;
-            this.metroSetLabel1.Text = "Expected number of OCR fields :";
+            this.metroSetLabel1.Text = "Expected number of OCR lines :";
             this.metroSetLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.metroSetLabel1.ThemeAuthor = "Narwin";
             this.metroSetLabel1.ThemeName = "MetroLite";
@@ -1891,6 +1895,8 @@
             // PNL_5
             // 
             this.PNL_5.BackColor = System.Drawing.Color.Transparent;
+            this.PNL_5.Controls.Add(this.P5_T12);
+            this.PNL_5.Controls.Add(this.metroSetLabel51);
             this.PNL_5.Controls.Add(this.P5_T11);
             this.PNL_5.Controls.Add(this.P5_T10);
             this.PNL_5.Controls.Add(this.P5_T9);
@@ -1925,9 +1931,9 @@
             this.PNL_5.Controls.Add(this.metroSetDivider7);
             this.PNL_5.Controls.Add(this.metroSetTile4);
             this.PNL_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.PNL_5.Location = new System.Drawing.Point(1114, 213);
+            this.PNL_5.Location = new System.Drawing.Point(1106, 206);
             this.PNL_5.Name = "PNL_5";
-            this.PNL_5.Size = new System.Drawing.Size(1000, 345);
+            this.PNL_5.Size = new System.Drawing.Size(1083, 345);
             this.PNL_5.TabIndex = 68;
             this.PNL_5.Visible = false;
             // 
@@ -1935,7 +1941,7 @@
             // 
             this.P5_T11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.P5_T11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.P5_T11.Location = new System.Drawing.Point(785, 313);
+            this.P5_T11.Location = new System.Drawing.Point(733, 313);
             this.P5_T11.MaxLength = 3;
             this.P5_T11.Name = "P5_T11";
             this.P5_T11.Size = new System.Drawing.Size(43, 27);
@@ -1953,7 +1959,7 @@
             this.P5_T10.Location = new System.Drawing.Point(625, 313);
             this.P5_T10.MaxLength = 255;
             this.P5_T10.Name = "P5_T10";
-            this.P5_T10.Size = new System.Drawing.Size(73, 27);
+            this.P5_T10.Size = new System.Drawing.Size(21, 27);
             this.P5_T10.TabIndex = 98;
             this.P5_T10.WordWrap = false;
             this.P5_T10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P5_TT_KeyPress);
@@ -1967,7 +1973,7 @@
             this.P5_T9.Location = new System.Drawing.Point(681, 272);
             this.P5_T9.MaxLength = 255;
             this.P5_T9.Name = "P5_T9";
-            this.P5_T9.Size = new System.Drawing.Size(93, 27);
+            this.P5_T9.Size = new System.Drawing.Size(176, 27);
             this.P5_T9.TabIndex = 96;
             this.P5_T9.WordWrap = false;
             this.P5_T9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P5_TT_KeyPress);
@@ -2095,7 +2101,7 @@
             this.P5_Btn_Clear.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_Clear.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_Clear.HoverTextColor = System.Drawing.Color.White;
-            this.P5_Btn_Clear.Location = new System.Drawing.Point(785, 266);
+            this.P5_Btn_Clear.Location = new System.Drawing.Point(868, 266);
             this.P5_Btn_Clear.Name = "P5_Btn_Clear";
             this.P5_Btn_Clear.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P5_Btn_Clear.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -2106,7 +2112,7 @@
             this.P5_Btn_Clear.Size = new System.Drawing.Size(72, 35);
             this.P5_Btn_Clear.Style = MetroSet_UI.Design.Style.Light;
             this.P5_Btn_Clear.StyleManager = this.styleManager1;
-            this.P5_Btn_Clear.TabIndex = 102;
+            this.P5_Btn_Clear.TabIndex = 103;
             this.P5_Btn_Clear.Text = "Clear All";
             this.P5_Btn_Clear.ThemeAuthor = "Narwin";
             this.P5_Btn_Clear.ThemeName = "MetroLite";
@@ -2116,9 +2122,9 @@
             // 
             this.metroSetLabel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.metroSetLabel32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel32.Location = new System.Drawing.Point(834, 313);
+            this.metroSetLabel32.Location = new System.Drawing.Point(782, 313);
             this.metroSetLabel32.Name = "metroSetLabel32";
-            this.metroSetLabel32.Size = new System.Drawing.Size(22, 27);
+            this.metroSetLabel32.Size = new System.Drawing.Size(18, 27);
             this.metroSetLabel32.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetLabel32.StyleManager = this.styleManager1;
             this.metroSetLabel32.TabIndex = 86;
@@ -2131,7 +2137,7 @@
             // 
             this.metroSetLabel31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.metroSetLabel31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel31.Location = new System.Drawing.Point(704, 313);
+            this.metroSetLabel31.Location = new System.Drawing.Point(652, 313);
             this.metroSetLabel31.Name = "metroSetLabel31";
             this.metroSetLabel31.Size = new System.Drawing.Size(75, 27);
             this.metroSetLabel31.Style = MetroSet_UI.Design.Style.Light;
@@ -2347,7 +2353,7 @@
             this.metroSetDivider8.Location = new System.Drawing.Point(217, 255);
             this.metroSetDivider8.Name = "metroSetDivider8";
             this.metroSetDivider8.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider8.Size = new System.Drawing.Size(782, 4);
+            this.metroSetDivider8.Size = new System.Drawing.Size(865, 4);
             this.metroSetDivider8.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider8.StyleManager = this.styleManager1;
             this.metroSetDivider8.TabIndex = 74;
@@ -2393,7 +2399,7 @@
             this.P5_Btn_Delete.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_Delete.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_Delete.HoverTextColor = System.Drawing.Color.White;
-            this.P5_Btn_Delete.Location = new System.Drawing.Point(863, 307);
+            this.P5_Btn_Delete.Location = new System.Drawing.Point(946, 307);
             this.P5_Btn_Delete.Name = "P5_Btn_Delete";
             this.P5_Btn_Delete.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P5_Btn_Delete.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -2404,7 +2410,7 @@
             this.P5_Btn_Delete.Size = new System.Drawing.Size(129, 35);
             this.P5_Btn_Delete.Style = MetroSet_UI.Design.Style.Light;
             this.P5_Btn_Delete.StyleManager = this.styleManager1;
-            this.P5_Btn_Delete.TabIndex = 101;
+            this.P5_Btn_Delete.TabIndex = 102;
             this.P5_Btn_Delete.Text = "Delete Element";
             this.P5_Btn_Delete.ThemeAuthor = "Narwin";
             this.P5_Btn_Delete.ThemeName = "MetroLite";
@@ -2420,7 +2426,7 @@
             this.P5_Btn_New.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_New.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P5_Btn_New.HoverTextColor = System.Drawing.Color.White;
-            this.P5_Btn_New.Location = new System.Drawing.Point(863, 266);
+            this.P5_Btn_New.Location = new System.Drawing.Point(946, 266);
             this.P5_Btn_New.Name = "P5_Btn_New";
             this.P5_Btn_New.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P5_Btn_New.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -2431,7 +2437,7 @@
             this.P5_Btn_New.Size = new System.Drawing.Size(129, 35);
             this.P5_Btn_New.Style = MetroSet_UI.Design.Style.Light;
             this.P5_Btn_New.StyleManager = this.styleManager1;
-            this.P5_Btn_New.TabIndex = 100;
+            this.P5_Btn_New.TabIndex = 101;
             this.P5_Btn_New.Text = "Add New Element";
             this.P5_Btn_New.ThemeAuthor = "Narwin";
             this.P5_Btn_New.ThemeName = "MetroLite";
@@ -2450,7 +2456,7 @@
             this.P5_Pan.Controls.Add(this.P5_IMG);
             this.P5_Pan.Location = new System.Drawing.Point(11, 34);
             this.P5_Pan.Name = "P5_Pan";
-            this.P5_Pan.Size = new System.Drawing.Size(981, 197);
+            this.P5_Pan.Size = new System.Drawing.Size(1064, 197);
             this.P5_Pan.TabIndex = 71;
             this.P5_Pan.Click += new System.EventHandler(this.P5_Pan_Click);
             // 
@@ -2536,7 +2542,7 @@
             this.metroSetDivider7.Location = new System.Drawing.Point(217, 24);
             this.metroSetDivider7.Name = "metroSetDivider7";
             this.metroSetDivider7.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider7.Size = new System.Drawing.Size(782, 4);
+            this.metroSetDivider7.Size = new System.Drawing.Size(865, 4);
             this.metroSetDivider7.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider7.StyleManager = this.styleManager1;
             this.metroSetDivider7.TabIndex = 70;
@@ -2574,6 +2580,9 @@
             // PNL_6
             // 
             this.PNL_6.BackColor = System.Drawing.Color.Transparent;
+            this.PNL_6.Controls.Add(this.P6_T12);
+            this.PNL_6.Controls.Add(this.metroSetLabel33);
+            this.PNL_6.Controls.Add(this.metroSetLabel60);
             this.PNL_6.Controls.Add(this.P6_T11);
             this.PNL_6.Controls.Add(this.P6_T10);
             this.PNL_6.Controls.Add(this.P6_T9);
@@ -2586,7 +2595,6 @@
             this.PNL_6.Controls.Add(this.P6_T2);
             this.PNL_6.Controls.Add(this.P6_T1);
             this.PNL_6.Controls.Add(this.P6_Btn_Clear);
-            this.PNL_6.Controls.Add(this.metroSetLabel33);
             this.PNL_6.Controls.Add(this.metroSetLabel34);
             this.PNL_6.Controls.Add(this.metroSetLabel35);
             this.PNL_6.Controls.Add(this.metroSetLabel36);
@@ -2608,9 +2616,9 @@
             this.PNL_6.Controls.Add(this.metroSetDivider10);
             this.PNL_6.Controls.Add(this.metroSetTile7);
             this.PNL_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.PNL_6.Location = new System.Drawing.Point(1083, 237);
+            this.PNL_6.Location = new System.Drawing.Point(1081, 239);
             this.PNL_6.Name = "PNL_6";
-            this.PNL_6.Size = new System.Drawing.Size(1000, 345);
+            this.PNL_6.Size = new System.Drawing.Size(1083, 345);
             this.PNL_6.TabIndex = 103;
             this.PNL_6.Visible = false;
             // 
@@ -2618,7 +2626,7 @@
             // 
             this.P6_T11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.P6_T11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.P6_T11.Location = new System.Drawing.Point(785, 313);
+            this.P6_T11.Location = new System.Drawing.Point(733, 313);
             this.P6_T11.MaxLength = 3;
             this.P6_T11.Name = "P6_T11";
             this.P6_T11.Size = new System.Drawing.Size(43, 27);
@@ -2636,7 +2644,7 @@
             this.P6_T10.Location = new System.Drawing.Point(625, 313);
             this.P6_T10.MaxLength = 255;
             this.P6_T10.Name = "P6_T10";
-            this.P6_T10.Size = new System.Drawing.Size(73, 27);
+            this.P6_T10.Size = new System.Drawing.Size(21, 27);
             this.P6_T10.TabIndex = 132;
             this.P6_T10.WordWrap = false;
             this.P6_T10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P6_TT_KeyPress);
@@ -2650,7 +2658,7 @@
             this.P6_T9.Location = new System.Drawing.Point(681, 272);
             this.P6_T9.MaxLength = 255;
             this.P6_T9.Name = "P6_T9";
-            this.P6_T9.Size = new System.Drawing.Size(93, 27);
+            this.P6_T9.Size = new System.Drawing.Size(176, 27);
             this.P6_T9.TabIndex = 130;
             this.P6_T9.WordWrap = false;
             this.P6_T9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P6_TT_KeyPress);
@@ -2778,7 +2786,7 @@
             this.P6_Btn_Clear.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_Clear.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_Clear.HoverTextColor = System.Drawing.Color.White;
-            this.P6_Btn_Clear.Location = new System.Drawing.Point(785, 266);
+            this.P6_Btn_Clear.Location = new System.Drawing.Point(868, 266);
             this.P6_Btn_Clear.Name = "P6_Btn_Clear";
             this.P6_Btn_Clear.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P6_Btn_Clear.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -2795,26 +2803,11 @@
             this.P6_Btn_Clear.ThemeName = "MetroLite";
             this.P6_Btn_Clear.Click += new System.EventHandler(this.P6_Btn_Clear_Click);
             // 
-            // metroSetLabel33
-            // 
-            this.metroSetLabel33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroSetLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel33.Location = new System.Drawing.Point(834, 313);
-            this.metroSetLabel33.Name = "metroSetLabel33";
-            this.metroSetLabel33.Size = new System.Drawing.Size(22, 27);
-            this.metroSetLabel33.Style = MetroSet_UI.Design.Style.Light;
-            this.metroSetLabel33.StyleManager = this.styleManager1;
-            this.metroSetLabel33.TabIndex = 120;
-            this.metroSetLabel33.Text = "%";
-            this.metroSetLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroSetLabel33.ThemeAuthor = "Narwin";
-            this.metroSetLabel33.ThemeName = "MetroLite";
-            // 
             // metroSetLabel34
             // 
             this.metroSetLabel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.metroSetLabel34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel34.Location = new System.Drawing.Point(704, 313);
+            this.metroSetLabel34.Location = new System.Drawing.Point(652, 313);
             this.metroSetLabel34.Name = "metroSetLabel34";
             this.metroSetLabel34.Size = new System.Drawing.Size(75, 27);
             this.metroSetLabel34.Style = MetroSet_UI.Design.Style.Light;
@@ -3030,7 +3023,7 @@
             this.metroSetDivider9.Location = new System.Drawing.Point(217, 255);
             this.metroSetDivider9.Name = "metroSetDivider9";
             this.metroSetDivider9.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider9.Size = new System.Drawing.Size(782, 4);
+            this.metroSetDivider9.Size = new System.Drawing.Size(865, 4);
             this.metroSetDivider9.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider9.StyleManager = this.styleManager1;
             this.metroSetDivider9.TabIndex = 108;
@@ -3076,7 +3069,7 @@
             this.P6_Btn_Delete.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_Delete.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_Delete.HoverTextColor = System.Drawing.Color.White;
-            this.P6_Btn_Delete.Location = new System.Drawing.Point(863, 307);
+            this.P6_Btn_Delete.Location = new System.Drawing.Point(946, 307);
             this.P6_Btn_Delete.Name = "P6_Btn_Delete";
             this.P6_Btn_Delete.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P6_Btn_Delete.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -3103,7 +3096,7 @@
             this.P6_Btn_New.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_New.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.P6_Btn_New.HoverTextColor = System.Drawing.Color.White;
-            this.P6_Btn_New.Location = new System.Drawing.Point(863, 266);
+            this.P6_Btn_New.Location = new System.Drawing.Point(946, 266);
             this.P6_Btn_New.Name = "P6_Btn_New";
             this.P6_Btn_New.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.P6_Btn_New.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -3133,7 +3126,7 @@
             this.P6_Pan.Controls.Add(this.P6_IMG);
             this.P6_Pan.Location = new System.Drawing.Point(11, 34);
             this.P6_Pan.Name = "P6_Pan";
-            this.P6_Pan.Size = new System.Drawing.Size(981, 197);
+            this.P6_Pan.Size = new System.Drawing.Size(1064, 197);
             this.P6_Pan.TabIndex = 106;
             this.P6_Pan.Click += new System.EventHandler(this.P6_Pan_Click);
             // 
@@ -3219,7 +3212,7 @@
             this.metroSetDivider10.Location = new System.Drawing.Point(217, 24);
             this.metroSetDivider10.Name = "metroSetDivider10";
             this.metroSetDivider10.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider10.Size = new System.Drawing.Size(782, 4);
+            this.metroSetDivider10.Size = new System.Drawing.Size(865, 4);
             this.metroSetDivider10.Style = MetroSet_UI.Design.Style.Light;
             this.metroSetDivider10.StyleManager = this.styleManager1;
             this.metroSetDivider10.TabIndex = 105;
@@ -4016,11 +4009,84 @@
             this.metroSetTile11.ThemeName = "MetroLite";
             this.metroSetTile11.TileAlign = MetroSet_UI.Enums.TileAlign.TopCenter;
             // 
+            // P5_T12
+            // 
+            this.P5_T12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.P5_T12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.P5_T12.Location = new System.Drawing.Point(903, 313);
+            this.P5_T12.MaxLength = 3;
+            this.P5_T12.Name = "P5_T12";
+            this.P5_T12.Size = new System.Drawing.Size(37, 27);
+            this.P5_T12.TabIndex = 100;
+            this.P5_T12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.P5_T12.WordWrap = false;
+            this.P5_T12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P5_T_KeyPress);
+            this.P5_T12.Leave += new System.EventHandler(this.P5_T_Leave);
+            // 
+            // metroSetLabel51
+            // 
+            this.metroSetLabel51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetLabel51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetLabel51.Location = new System.Drawing.Point(806, 313);
+            this.metroSetLabel51.Name = "metroSetLabel51";
+            this.metroSetLabel51.Size = new System.Drawing.Size(91, 27);
+            this.metroSetLabel51.Style = MetroSet_UI.Design.Style.Light;
+            this.metroSetLabel51.StyleManager = this.styleManager1;
+            this.metroSetLabel51.TabIndex = 103;
+            this.metroSetLabel51.Text = "OCR Index :";
+            this.metroSetLabel51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroSetLabel51.ThemeAuthor = "Narwin";
+            this.metroSetLabel51.ThemeName = "MetroLite";
+            // 
+            // P6_T12
+            // 
+            this.P6_T12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.P6_T12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.P6_T12.Location = new System.Drawing.Point(903, 313);
+            this.P6_T12.MaxLength = 3;
+            this.P6_T12.Name = "P6_T12";
+            this.P6_T12.Size = new System.Drawing.Size(37, 27);
+            this.P6_T12.TabIndex = 134;
+            this.P6_T12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.P6_T12.WordWrap = false;
+            this.P6_T12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P6_T_KeyPress);
+            this.P6_T12.Leave += new System.EventHandler(this.P6_T_Leave);
+            // 
+            // metroSetLabel33
+            // 
+            this.metroSetLabel33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetLabel33.Location = new System.Drawing.Point(806, 313);
+            this.metroSetLabel33.Name = "metroSetLabel33";
+            this.metroSetLabel33.Size = new System.Drawing.Size(91, 27);
+            this.metroSetLabel33.Style = MetroSet_UI.Design.Style.Light;
+            this.metroSetLabel33.StyleManager = this.styleManager1;
+            this.metroSetLabel33.TabIndex = 136;
+            this.metroSetLabel33.Text = "OCR Index :";
+            this.metroSetLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroSetLabel33.ThemeAuthor = "Narwin";
+            this.metroSetLabel33.ThemeName = "MetroLite";
+            // 
+            // metroSetLabel60
+            // 
+            this.metroSetLabel60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetLabel60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetLabel60.Location = new System.Drawing.Point(782, 313);
+            this.metroSetLabel60.Name = "metroSetLabel60";
+            this.metroSetLabel60.Size = new System.Drawing.Size(18, 27);
+            this.metroSetLabel60.Style = MetroSet_UI.Design.Style.Light;
+            this.metroSetLabel60.StyleManager = this.styleManager1;
+            this.metroSetLabel60.TabIndex = 134;
+            this.metroSetLabel60.Text = "%";
+            this.metroSetLabel60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroSetLabel60.ThemeAuthor = "Narwin";
+            this.metroSetLabel60.ThemeName = "MetroLite";
+            // 
             // TemplateBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 242);
+            this.ClientSize = new System.Drawing.Size(500, 244);
             this.Controls.Add(this.metroSetDivider3);
             this.Controls.Add(this.Btn_Save);
             this.Controls.Add(this.Btn_Next);
@@ -4235,7 +4301,6 @@
         private System.Windows.Forms.TextBox P6_T2;
         private System.Windows.Forms.TextBox P6_T1;
         private MetroSet_UI.Controls.MetroSetButton P6_Btn_Clear;
-        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel33;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel34;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel35;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel36;
@@ -4308,5 +4373,10 @@
         private System.Windows.Forms.PictureBox P8_IMG;
         private MetroSet_UI.Controls.MetroSetDivider metroSetDivider14;
         private MetroSet_UI.Controls.MetroSetTile metroSetTile11;
+        private System.Windows.Forms.TextBox P5_T12;
+        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel51;
+        private System.Windows.Forms.TextBox P6_T12;
+        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel33;
+        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel60;
     }
 }
