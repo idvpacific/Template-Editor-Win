@@ -275,6 +275,7 @@
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.metroSetButton2);
             this.Controls.Add(this.metroSetButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "T2_AddNewState";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

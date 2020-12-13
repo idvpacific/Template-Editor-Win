@@ -51,3 +51,29 @@ E:\Project\07- Document Template Builder\Source\IDV Document Templates\IDV Docum
 E:\Project\07- Document Template Builder\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CopyComplete
 E:\Project\07- Document Template Builder\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.exe
 E:\Project\07- Document Template Builder\Source\IDV Document Templates\IDV Document Templates\obj\Debug\IDV Document Templates.pdb
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\IDV Document Templates.exe.config
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\IDV Document Templates.exe
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\IDV Document Templates.pdb
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\MetroSet UI.dll
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\Newtonsoft.Json.dll
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\RestSharp.dll
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\Tulpep.NotificationWindow.dll
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\Newtonsoft.Json.xml
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\bin\Debug\RestSharp.xml
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.Login.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.Properties.Resources.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T1_AddNewCountry.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T1_EditCountry.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T2_AddNewState.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T2_EditSate.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T3_AddNewDocType.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T3_EditDocType.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T4_AddNewDocument.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.T4_EditDocument.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.Templates.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV_Document_Templates.TemplateBuilder.resources
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.GenerateResource.cache
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CoreCompileInputs.cache
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CopyComplete
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.exe
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.pdb

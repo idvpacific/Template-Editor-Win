@@ -142,5 +142,15 @@ namespace IDV_Document_Templates
                 ocrindex = value;
             }
         }
+
+        private string ocrposition = "L";
+        public string OcrPosition
+        {
+            get { return ocrposition; }
+            set
+            {
+                ocrposition = value;
+            }
+        }
     }
 }

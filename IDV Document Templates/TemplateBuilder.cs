@@ -456,6 +456,7 @@ namespace IDV_Document_Templates
                                             LB.KeyValue = RW[13].ToString();
                                             LB.Similarity = RW[14].ToString();
                                             LB.OcrIndex = RW[15].ToString();
+                                            LB.OcrPosition = RW[16].ToString();
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -543,6 +544,7 @@ namespace IDV_Document_Templates
                                             LB.KeyValue = RW[13].ToString();
                                             LB.Similarity = RW[14].ToString();
                                             LB.OcrIndex = RW[15].ToString();
+                                            LB.OcrPosition = RW[16].ToString();
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -868,6 +870,7 @@ namespace IDV_Document_Templates
                     P5_T10.Text = "";
                     P5_T11.Text = "";
                     P5_T12.Text = "";
+                    P5_T13.Text = "";
                     P5_C1.Checked = false;
                     P5_C2.Checked = false;
                     FI_TL.Visible = false;
@@ -893,6 +896,7 @@ namespace IDV_Document_Templates
                     P6_T10.Text = "";
                     P6_T11.Text = "";
                     P6_T12.Text = "";
+                    P6_T13.Text = "";
                     P6_C1.Checked = false;
                     P6_C2.Checked = false;
                     BI_TL.Visible = false;
@@ -1003,6 +1007,25 @@ namespace IDV_Document_Templates
                 PNL_6.Visible = false;
                 PNL_7.Visible = false;
                 PNL_8.Visible = false;
+                P5_C1.BackColor = Color.White;
+                P5_C1.ForeColor = Color.Black;
+                P5_C2.BackColor = Color.White;
+                P5_C2.ForeColor = Color.Black;
+                P6_C1.BackColor = Color.White;
+                P6_C1.ForeColor = Color.Black;
+                P6_C2.BackColor = Color.White;
+                P6_C2.ForeColor = Color.Black;
+                if(styleManager1.Style==MetroSet_UI.Design.Style.Dark)
+                {
+                    P5_C1.BackColor = Color.FromArgb(32, 32, 32);
+                    P5_C1.ForeColor = Color.White;
+                    P5_C2.BackColor = Color.FromArgb(32, 32, 32);
+                    P5_C2.ForeColor = Color.White;
+                    P6_C1.BackColor = Color.FromArgb(32, 32, 32);
+                    P6_C1.ForeColor = Color.White;
+                    P6_C2.BackColor = Color.FromArgb(32, 32, 32);
+                    P6_C2.ForeColor = Color.White;
+                }
                 switch (PageNum)
                 {
                     case 1: // Panel 1 - Loadding :
@@ -1063,30 +1086,32 @@ namespace IDV_Document_Templates
                             }
                             catch (Exception) { }
                             P5_Pan_Click(null, null);
-                            P5_T1.BackColor = P5_C1.BackgroundColor;
+                            P5_T1.BackColor = P5_C1.BackColor;
                             P5_T1.ForeColor = P5_C1.ForeColor;
-                            P5_T2.BackColor = P5_C1.BackgroundColor;
+                            P5_T2.BackColor = P5_C1.BackColor;
                             P5_T2.ForeColor = P5_C1.ForeColor;
-                            P5_T3.BackColor = P5_C1.BackgroundColor;
+                            P5_T3.BackColor = P5_C1.BackColor;
                             P5_T3.ForeColor = P5_C1.ForeColor;
-                            P5_T4.BackColor = P5_C1.BackgroundColor;
+                            P5_T4.BackColor = P5_C1.BackColor;
                             P5_T4.ForeColor = P5_C1.ForeColor;
-                            P5_T5.BackColor = P5_C1.BackgroundColor;
+                            P5_T5.BackColor = P5_C1.BackColor;
                             P5_T5.ForeColor = P5_C1.ForeColor;
-                            P5_T6.BackColor = P5_C1.BackgroundColor;
+                            P5_T6.BackColor = P5_C1.BackColor;
                             P5_T6.ForeColor = P5_C1.ForeColor;
-                            P5_T7.BackColor = P5_C1.BackgroundColor;
+                            P5_T7.BackColor = P5_C1.BackColor;
                             P5_T7.ForeColor = P5_C1.ForeColor;
-                            P5_T8.BackColor = P5_C1.BackgroundColor;
+                            P5_T8.BackColor = P5_C1.BackColor;
                             P5_T8.ForeColor = P5_C1.ForeColor;
-                            P5_T9.BackColor = P5_C1.BackgroundColor;
+                            P5_T9.BackColor = P5_C1.BackColor;
                             P5_T9.ForeColor = P5_C1.ForeColor;
-                            P5_T10.BackColor = P5_C1.BackgroundColor;
+                            P5_T10.BackColor = P5_C1.BackColor;
                             P5_T10.ForeColor = P5_C1.ForeColor;
-                            P5_T11.BackColor = P5_C1.BackgroundColor;
+                            P5_T11.BackColor = P5_C1.BackColor;
                             P5_T11.ForeColor = P5_C1.ForeColor;
-                            P5_T12.BackColor = P5_C1.BackgroundColor;
+                            P5_T12.BackColor = P5_C1.BackColor;
                             P5_T12.ForeColor = P5_C1.ForeColor;
+                            P5_T13.BackColor = P5_C1.BackColor;
+                            P5_T13.ForeColor = P5_C1.ForeColor;
                             PNL_5.Left = 15;
                             PNL_5.Top = 130;
                             PNL_5.Width = this.Width - 30;
@@ -1112,30 +1137,32 @@ namespace IDV_Document_Templates
                             }
                             catch (Exception) { }
                             P6_Pan_Click(null, null);
-                            P6_T1.BackColor = P6_C1.BackgroundColor;
+                            P6_T1.BackColor = P6_C1.BackColor;
                             P6_T1.ForeColor = P6_C1.ForeColor;
-                            P6_T2.BackColor = P6_C1.BackgroundColor;
+                            P6_T2.BackColor = P6_C1.BackColor;
                             P6_T2.ForeColor = P6_C1.ForeColor;
-                            P6_T3.BackColor = P6_C1.BackgroundColor;
+                            P6_T3.BackColor = P6_C1.BackColor;
                             P6_T3.ForeColor = P6_C1.ForeColor;
-                            P6_T4.BackColor = P6_C1.BackgroundColor;
+                            P6_T4.BackColor = P6_C1.BackColor;
                             P6_T4.ForeColor = P6_C1.ForeColor;
-                            P6_T5.BackColor = P6_C1.BackgroundColor;
+                            P6_T5.BackColor = P6_C1.BackColor;
                             P6_T5.ForeColor = P6_C1.ForeColor;
-                            P6_T6.BackColor = P6_C1.BackgroundColor;
+                            P6_T6.BackColor = P6_C1.BackColor;
                             P6_T6.ForeColor = P6_C1.ForeColor;
-                            P6_T7.BackColor = P6_C1.BackgroundColor;
+                            P6_T7.BackColor = P6_C1.BackColor;
                             P6_T7.ForeColor = P6_C1.ForeColor;
-                            P6_T8.BackColor = P6_C1.BackgroundColor;
+                            P6_T8.BackColor = P6_C1.BackColor;
                             P6_T8.ForeColor = P6_C1.ForeColor;
-                            P6_T9.BackColor = P6_C1.BackgroundColor;
+                            P6_T9.BackColor = P6_C1.BackColor;
                             P6_T9.ForeColor = P6_C1.ForeColor;
-                            P6_T10.BackColor = P6_C1.BackgroundColor;
+                            P6_T10.BackColor = P6_C1.BackColor;
                             P6_T10.ForeColor = P6_C1.ForeColor;
-                            P6_T11.BackColor = P6_C1.BackgroundColor;
+                            P6_T11.BackColor = P6_C1.BackColor;
                             P6_T11.ForeColor = P6_C1.ForeColor;
-                            P6_T12.BackColor = P6_C1.BackgroundColor;
+                            P6_T12.BackColor = P6_C1.BackColor;
                             P6_T12.ForeColor = P6_C1.ForeColor;
+                            P6_T13.BackColor = P6_C1.BackColor;
+                            P6_T13.ForeColor = P6_C1.ForeColor;
                             PNL_6.Left = 15;
                             PNL_6.Top = 130;
                             PNL_6.Width = this.Width - 30;
@@ -1161,15 +1188,15 @@ namespace IDV_Document_Templates
                             }
                             catch (Exception) { }
                             P7_Pan_Click(null, null);
-                            P7_T1.BackColor = P5_C1.BackgroundColor;
+                            P7_T1.BackColor = P5_C1.BackColor;
                             P7_T1.ForeColor = P5_C1.ForeColor;
-                            P7_T2.BackColor = P5_C1.BackgroundColor;
+                            P7_T2.BackColor = P5_C1.BackColor;
                             P7_T2.ForeColor = P5_C1.ForeColor;
-                            P7_T3.BackColor = P5_C1.BackgroundColor;
+                            P7_T3.BackColor = P5_C1.BackColor;
                             P7_T3.ForeColor = P5_C1.ForeColor;
-                            P7_T4.BackColor = P5_C1.BackgroundColor;
+                            P7_T4.BackColor = P5_C1.BackColor;
                             P7_T4.ForeColor = P5_C1.ForeColor;
-                            P7_Color.BackColor = P5_C1.BackgroundColor;
+                            P7_Color.BackColor = P5_C1.BackColor;
                             P7_Color.Refresh();
                             PNL_7.Left = 15;
                             PNL_7.Top = 130;
@@ -1196,15 +1223,15 @@ namespace IDV_Document_Templates
                             }
                             catch (Exception) { }
                             P8_Pan_Click(null, null);
-                            P8_T1.BackColor = P5_C1.BackgroundColor;
-                            P8_T1.ForeColor = P5_C1.ForeColor;
-                            P8_T2.BackColor = P5_C1.BackgroundColor;
-                            P8_T2.ForeColor = P5_C1.ForeColor;
-                            P8_T3.BackColor = P5_C1.BackgroundColor;
-                            P8_T3.ForeColor = P5_C1.ForeColor;
-                            P8_T4.BackColor = P5_C1.BackgroundColor;
-                            P8_T4.ForeColor = P5_C1.ForeColor;
-                            P8_Color.BackColor = P5_C1.BackgroundColor;
+                            P8_T1.BackColor = P6_C1.BackColor;
+                            P8_T1.ForeColor = P6_C1.ForeColor;
+                            P8_T2.BackColor = P6_C1.BackColor;
+                            P8_T2.ForeColor = P6_C1.ForeColor;
+                            P8_T3.BackColor = P6_C1.BackColor;
+                            P8_T3.ForeColor = P6_C1.ForeColor;
+                            P8_T4.BackColor = P6_C1.BackColor;
+                            P8_T4.ForeColor = P6_C1.ForeColor;
+                            P8_Color.BackColor = P6_C1.BackColor;
                             P8_Color.Refresh();
                             PNL_8.Left = 15;
                             PNL_8.Top = 130;
@@ -1499,6 +1526,7 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V14" + "\": " + "\"" + TRSel.KeyValue + "\",";
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
                                     JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
+                                    JsonBody += "\"" + "V17" + "\": " + "\"" + TRSel.OcrPosition + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1597,6 +1625,7 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V14" + "\": " + "\"" + TRSel.KeyValue + "\",";
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
                                     JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
+                                    JsonBody += "\"" + "V17" + "\": " + "\"" + TRSel.OcrPosition + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1886,6 +1915,7 @@ namespace IDV_Document_Templates
                 P5_T10.Text = "";
                 P5_T11.Text = "";
                 P5_T12.Text = "";
+                P5_T13.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
                 ObjectLoad = false;
@@ -1941,6 +1971,7 @@ namespace IDV_Document_Templates
                 LB.OutputShow = true;
                 LB.OutputTitle = "";
                 LB.Similarity = "100";
+                LB.OcrPosition = "L";
                 LB.Text = "";
                 LB.ForeColor = Color.Black;
                 LB.TransparentBackColor = Color.Red;
@@ -2051,6 +2082,7 @@ namespace IDV_Document_Templates
                 P5_T10.Text = "";
                 P5_T11.Text = "";
                 P5_T12.Text = "";
+                P5_T13.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
                 if (P5_SelObject != null)
@@ -2067,6 +2099,7 @@ namespace IDV_Document_Templates
                     P5_T10.Text = P5_SelObject.KeyValue.Trim();
                     P5_T11.Text = P5_SelObject.Similarity;
                     P5_T12.Text = P5_SelObject.OcrIndex;
+                    P5_T13.Text = P5_SelObject.OcrPosition;
                     P5_C1.Checked = P5_SelObject.OutputShow;
                     P5_C2.Checked = P5_SelObject.KeyActive;
                 }
@@ -2153,7 +2186,7 @@ namespace IDV_Document_Templates
             }
         }
         //==========================================================================
-        private void P5_C1_CheckedChanged(object sender)
+        private void P5_C1_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
@@ -2167,7 +2200,7 @@ namespace IDV_Document_Templates
             { }
         }
         //==========================================================================
-        private void P5_C2_CheckedChanged(object sender)
+        private void P5_C2_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
@@ -2451,6 +2484,14 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P5_T13":
+                            {
+                                P5_T13.Text = P5_T13.Text.Trim().ToUpper();
+                                if (P5_T13.Text.Length > 2) { P5_T13.Text = P5_T13.Text.Substring(0, 2); }
+                                P5_SelObject.OcrPosition = P5_T13.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -2483,6 +2524,7 @@ namespace IDV_Document_Templates
                         P5_T10.Text = P5_SelObject.KeyValue.Trim();
                         P5_T11.Text = P5_SelObject.Similarity;
                         P5_T12.Text = P5_SelObject.OcrIndex;
+                        P5_T13.Text = P5_SelObject.OcrPosition;
                         P5_C1.Checked = P5_SelObject.OutputShow;
                         P5_C2.Checked = P5_SelObject.KeyActive;
                     }
@@ -2638,6 +2680,7 @@ namespace IDV_Document_Templates
                 P6_T10.Text = "";
                 P6_T11.Text = "";
                 P6_T12.Text = "";
+                P6_T13.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
                 ObjectLoad = false;
@@ -2693,6 +2736,7 @@ namespace IDV_Document_Templates
                 LB.OutputShow = true;
                 LB.OutputTitle = "";
                 LB.Similarity = "100";
+                LB.OcrPosition = "L";
                 LB.Text = "";
                 LB.ForeColor = Color.Black;
                 LB.TransparentBackColor = Color.Red;
@@ -2803,6 +2847,7 @@ namespace IDV_Document_Templates
                 P6_T10.Text = "";
                 P6_T11.Text = "";
                 P6_T12.Text = "";
+                P6_T13.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
                 if (P6_SelObject != null)
@@ -2819,6 +2864,7 @@ namespace IDV_Document_Templates
                     P6_T10.Text = P6_SelObject.KeyValue.Trim();
                     P6_T11.Text = P6_SelObject.Similarity;
                     P6_T12.Text = P6_SelObject.OcrIndex;
+                    P6_T13.Text = P6_SelObject.OcrPosition;
                     P6_C1.Checked = P6_SelObject.OutputShow;
                     P6_C2.Checked = P6_SelObject.KeyActive;
                 }
@@ -2905,7 +2951,7 @@ namespace IDV_Document_Templates
             }
         }
         //==========================================================================
-        private void P6_C1_CheckedChanged(object sender)
+        private void P6_C1_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
@@ -2919,7 +2965,7 @@ namespace IDV_Document_Templates
             { }
         }
         //==========================================================================
-        private void P6_C2_CheckedChanged(object sender)
+        private void P6_C2_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
@@ -3203,6 +3249,14 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P6_T13":
+                            {
+                                P6_T13.Text = P6_T13.Text.Trim().ToUpper();
+                                if (P6_T13.Text.Length > 2) { P6_T13.Text = P6_T13.Text.Substring(0, 2); }
+                                P6_SelObject.OcrPosition = P6_T13.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -3235,6 +3289,7 @@ namespace IDV_Document_Templates
                         P6_T10.Text = P6_SelObject.KeyValue.Trim();
                         P6_T11.Text = P6_SelObject.Similarity;
                         P6_T12.Text = P6_SelObject.OcrIndex;
+                        P6_T13.Text = P6_SelObject.OcrPosition;
                         P6_C1.Checked = P6_SelObject.OutputShow;
                         P6_C2.Checked = P6_SelObject.KeyActive;
                     }
