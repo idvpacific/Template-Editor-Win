@@ -77,3 +77,4 @@ E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V
 E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.csproj.CopyComplete
 E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.exe
 E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.pdb
+E:\01- Project\06- Document Template Builder\01- Source\IDV Document Templates V2\IDV Document Templates\obj\Debug\IDV Document Templates.csprojAssemblyReference.cache
