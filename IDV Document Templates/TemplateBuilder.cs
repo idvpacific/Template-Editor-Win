@@ -197,7 +197,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_20_GetDocumentInformation" + "?" + "DID=" + DocumentID);
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_20_GetDocumentInformation" + "?" + "DID=" + DocumentID);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -241,7 +241,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_21_LoadTemplate" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_21_LoadTemplate" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);
@@ -291,7 +291,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_22_BasicConfigurationLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_22_BasicConfigurationLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -349,7 +349,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_23_FrontImageLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_23_FrontImageLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -377,7 +377,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_24_BackImageLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_24_BackImageLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -406,7 +406,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_25_FIElementsLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_25_FIElementsLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -457,6 +457,19 @@ namespace IDV_Document_Templates
                                             LB.Similarity = RW[14].ToString();
                                             LB.OcrIndex = RW[15].ToString();
                                             LB.OcrPosition = RW[16].ToString();
+                                            try
+                                            {
+                                                LB.DataProcessing = DigittoBool(RW[17].ToString());
+                                                LB.TypeCode = int.Parse(RW[18].ToString());
+                                                LB.SubstringStart = int.Parse(RW[19].ToString());
+                                                LB.SubstringLength = int.Parse(RW[20].ToString());
+                                                LB.SubstringLeft = DigittoBool(RW[21].ToString());
+                                                LB.InputFormat = RW[22].ToString();
+                                                LB.InputFormatSeprator = RW[23].ToString();
+                                                LB.OutputFormat = RW[24].ToString();
+                                                LB.OutputFormatSeprator = RW[25].ToString();
+                                            }
+                                            catch (Exception) { }
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -494,7 +507,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_26_BIElementsLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_26_BIElementsLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -545,6 +558,19 @@ namespace IDV_Document_Templates
                                             LB.Similarity = RW[14].ToString();
                                             LB.OcrIndex = RW[15].ToString();
                                             LB.OcrPosition = RW[16].ToString();
+                                            try
+                                            {
+                                                LB.DataProcessing = DigittoBool(RW[17].ToString());
+                                                LB.TypeCode = int.Parse(RW[18].ToString());
+                                                LB.SubstringStart = int.Parse(RW[19].ToString());
+                                                LB.SubstringLength = int.Parse(RW[20].ToString());
+                                                LB.SubstringLeft = DigittoBool(RW[21].ToString());
+                                                LB.InputFormat = RW[22].ToString();
+                                                LB.InputFormatSeprator = RW[23].ToString();
+                                                LB.OutputFormat = RW[24].ToString();
+                                                LB.OutputFormatSeprator = RW[25].ToString();
+                                            }
+                                            catch (Exception) { }
                                             LB.Text = "";
                                             LB.ForeColor = Color.Black;
                                             LB.TransparentBackColor = Color.Transparent;
@@ -582,7 +608,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_27_FIColorLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_27_FIColorLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -658,7 +684,7 @@ namespace IDV_Document_Templates
                             try
                             {
                                 string SRVR = ST_Server;
-                                var client = new RestClient(SRVR + "api/" + "DT_28_BIColorLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
+                                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_28_BIColorLoad" + "?" + "CID=" + BaseData_CountryCode + "&SID=" + BaseData_StateCode + "&DTID=" + BaseData_DocumentTypeCode + "&DID=" + BaseData_DocumentCode);
                                 client.Timeout = -1;
                                 var request = new RestRequest(Method.POST);
                                 IRestResponse response = client.Execute(request);
@@ -871,8 +897,17 @@ namespace IDV_Document_Templates
                     P5_T11.Text = "";
                     P5_T12.Text = "";
                     P5_T13.Text = "";
+                    P5_T14.Text = "";
+                    P5_T15.Text = "";
+                    P5_T16.Text = "";
+                    P5_T17.Text = "";
+                    P5_T18.Text = "";
+                    P5_T19.Text = "";
                     P5_C1.Checked = false;
                     P5_C2.Checked = false;
+                    P5_C3.Checked = false;
+                    P5_C4.Checked = false;
+                    P5_D1.SelectedIndex = 0;
                     FI_TL.Visible = false;
                     FI_TR.Visible = false;
                     FI_BL.Visible = false;
@@ -897,8 +932,17 @@ namespace IDV_Document_Templates
                     P6_T11.Text = "";
                     P6_T12.Text = "";
                     P6_T13.Text = "";
+                    P6_T14.Text = "";
+                    P6_T15.Text = "";
+                    P6_T16.Text = "";
+                    P6_T17.Text = "";
+                    P6_T18.Text = "";
+                    P6_T19.Text = "";
                     P6_C1.Checked = false;
                     P6_C2.Checked = false;
+                    P6_C3.Checked = false;
+                    P6_C3.Checked = false;
+                    P6_D1.SelectedIndex = 0;
                     BI_TL.Visible = false;
                     BI_TR.Visible = false;
                     BI_BL.Visible = false;
@@ -1011,20 +1055,36 @@ namespace IDV_Document_Templates
                 P5_C1.ForeColor = Color.Black;
                 P5_C2.BackColor = Color.White;
                 P5_C2.ForeColor = Color.Black;
+                P5_C3.BackColor = Color.White;
+                P5_C3.ForeColor = Color.Black;
+                P5_C4.BackColor = Color.White;
+                P5_C4.ForeColor = Color.Black;
                 P6_C1.BackColor = Color.White;
                 P6_C1.ForeColor = Color.Black;
                 P6_C2.BackColor = Color.White;
                 P6_C2.ForeColor = Color.Black;
-                if(styleManager1.Style==MetroSet_UI.Design.Style.Dark)
+                P6_C3.BackColor = Color.White;
+                P6_C3.ForeColor = Color.Black;
+                P6_C4.BackColor = Color.White;
+                P6_C4.ForeColor = Color.Black;
+                if (styleManager1.Style == MetroSet_UI.Design.Style.Dark)
                 {
                     P5_C1.BackColor = Color.FromArgb(32, 32, 32);
                     P5_C1.ForeColor = Color.White;
                     P5_C2.BackColor = Color.FromArgb(32, 32, 32);
                     P5_C2.ForeColor = Color.White;
+                    P5_C3.BackColor = Color.FromArgb(32, 32, 32);
+                    P5_C3.ForeColor = Color.White;
+                    P5_C4.BackColor = Color.FromArgb(32, 32, 32);
+                    P5_C4.ForeColor = Color.White;
                     P6_C1.BackColor = Color.FromArgb(32, 32, 32);
                     P6_C1.ForeColor = Color.White;
                     P6_C2.BackColor = Color.FromArgb(32, 32, 32);
                     P6_C2.ForeColor = Color.White;
+                    P6_C3.BackColor = Color.FromArgb(32, 32, 32);
+                    P6_C3.ForeColor = Color.White;
+                    P6_C4.BackColor = Color.FromArgb(32, 32, 32);
+                    P6_C4.ForeColor = Color.White;
                 }
                 switch (PageNum)
                 {
@@ -1085,6 +1145,15 @@ namespace IDV_Document_Templates
                                 P5_IMG.Height = IMGH;
                             }
                             catch (Exception) { }
+                            P5_D1.Items.Clear();
+                            P5_D1.Items.Add("Alphabet and number");
+                            P5_D1.Items.Add("Only alphabet");
+                            P5_D1.Items.Add("Only number");
+                            P5_D1.Items.Add("Address");
+                            P5_D1.Items.Add("Date with full month name ( D:day - NTHN:month name - M:month - Y:year )");
+                            P5_D1.Items.Add("Date with summary month name ( D:day - NTHN:month name - M:month - Y:year )");
+                            P5_D1.Items.Add("Date - only number ( D:day - M:month - Y:year )");
+                            P5_D1.Items.Add("Time ( H:hour - M:minutes - S:seconds");
                             P5_Pan_Click(null, null);
                             P5_T1.BackColor = P5_C1.BackColor;
                             P5_T1.ForeColor = P5_C1.ForeColor;
@@ -1112,6 +1181,18 @@ namespace IDV_Document_Templates
                             P5_T12.ForeColor = P5_C1.ForeColor;
                             P5_T13.BackColor = P5_C1.BackColor;
                             P5_T13.ForeColor = P5_C1.ForeColor;
+                            P5_T14.BackColor = P5_C1.BackColor;
+                            P5_T14.ForeColor = P5_C1.ForeColor;
+                            P5_T15.BackColor = P5_C1.BackColor;
+                            P5_T15.ForeColor = P5_C1.ForeColor;
+                            P5_T16.BackColor = P5_C1.BackColor;
+                            P5_T16.ForeColor = P5_C1.ForeColor;
+                            P5_T17.BackColor = P5_C1.BackColor;
+                            P5_T17.ForeColor = P5_C1.ForeColor;
+                            P5_T18.BackColor = P5_C1.BackColor;
+                            P5_T18.ForeColor = P5_C1.ForeColor;
+                            P5_T19.BackColor = P5_C1.BackColor;
+                            P5_T19.ForeColor = P5_C1.ForeColor;
                             PNL_5.Left = 15;
                             PNL_5.Top = 130;
                             PNL_5.Width = this.Width - 30;
@@ -1136,6 +1217,15 @@ namespace IDV_Document_Templates
                                 P6_IMG.Height = IMGH;
                             }
                             catch (Exception) { }
+                            P5_D1.Items.Clear();
+                            P5_D1.Items.Add("Alphabet and number");
+                            P5_D1.Items.Add("Only alphabet");
+                            P5_D1.Items.Add("Only number");
+                            P5_D1.Items.Add("Address");
+                            P5_D1.Items.Add("Date with full month name ( D:day - NTHN:month name - M:month - Y:year )");
+                            P5_D1.Items.Add("Date with summary month name ( D:day - NTHN:month name - M:month - Y:year )");
+                            P5_D1.Items.Add("Date - only number ( D:day - M:month - Y:year )");
+                            P5_D1.Items.Add("Time ( H:hour - M:minutes - S:seconds");
                             P6_Pan_Click(null, null);
                             P6_T1.BackColor = P6_C1.BackColor;
                             P6_T1.ForeColor = P6_C1.ForeColor;
@@ -1163,6 +1253,18 @@ namespace IDV_Document_Templates
                             P6_T12.ForeColor = P6_C1.ForeColor;
                             P6_T13.BackColor = P6_C1.BackColor;
                             P6_T13.ForeColor = P6_C1.ForeColor;
+                            P6_T14.BackColor = P6_C1.BackColor;
+                            P6_T14.ForeColor = P6_C1.ForeColor;
+                            P6_T15.BackColor = P6_C1.BackColor;
+                            P6_T15.ForeColor = P6_C1.ForeColor;
+                            P6_T16.BackColor = P6_C1.BackColor;
+                            P6_T16.ForeColor = P6_C1.ForeColor;
+                            P6_T17.BackColor = P6_C1.BackColor;
+                            P6_T17.ForeColor = P6_C1.ForeColor;
+                            P6_T18.BackColor = P6_C1.BackColor;
+                            P6_T18.ForeColor = P6_C1.ForeColor;
+                            P6_T19.BackColor = P6_C1.BackColor;
+                            P6_T19.ForeColor = P6_C1.ForeColor;
                             PNL_6.Left = 15;
                             PNL_6.Top = 130;
                             PNL_6.Width = this.Width - 30;
@@ -1328,7 +1430,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_29_BasicConfigurationSave");
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_29_BasicConfigurationSave");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1385,7 +1487,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_30_FrontImageSave?W=" + P3_Pic.Width.ToString() + "&H=" + P3_Pic.Height);
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_30_FrontImageSave?W=" + P3_Pic.Width.ToString() + "&H=" + P3_Pic.Height);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1423,7 +1525,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_31_BackImageSave?W=" + P4_Pic.Width.ToString() + "&H=" + P4_Pic.Height);
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_31_BackImageSave?W=" + P4_Pic.Width.ToString() + "&H=" + P4_Pic.Height);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1462,7 +1564,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_32_FIElementsSave?DelData=1");
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_32_FIElementsSave?DelData=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1499,7 +1601,7 @@ namespace IDV_Document_Templates
                             {
                                 try
                                 {
-                                    var client = new RestClient(ST_Server + "api/" + "DT_32_FIElementsSave?DelData=0");
+                                    var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_32_FIElementsSave?DelData=0");
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.POST);
                                     request.AddHeader("CID", BaseData_CountryCode);
@@ -1527,6 +1629,15 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
                                     JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
                                     JsonBody += "\"" + "V17" + "\": " + "\"" + TRSel.OcrPosition + "\",";
+                                    JsonBody += "\"" + "V18" + "\": " + "\"" + BooltoDigit(TRSel.DataProcessing) + "\",";
+                                    JsonBody += "\"" + "V19" + "\": " + "\"" + TRSel.TypeCode + "\",";
+                                    JsonBody += "\"" + "V20" + "\": " + "\"" + TRSel.SubstringStart + "\",";
+                                    JsonBody += "\"" + "V21" + "\": " + "\"" + TRSel.SubstringLength + "\",";
+                                    JsonBody += "\"" + "V22" + "\": " + "\"" + BooltoDigit(TRSel.SubstringLeft) + "\",";
+                                    JsonBody += "\"" + "V23" + "\": " + "\"" + TRSel.InputFormat + "\",";
+                                    JsonBody += "\"" + "V24" + "\": " + "\"" + TRSel.InputFormatSeprator + "\",";
+                                    JsonBody += "\"" + "V25" + "\": " + "\"" + TRSel.OutputFormat + "\",";
+                                    JsonBody += "\"" + "V26" + "\": " + "\"" + TRSel.OutputFormatSeprator + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1561,7 +1672,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_33_BIElementsSave?DelData=1");
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_33_BIElementsSave?DelData=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1598,7 +1709,7 @@ namespace IDV_Document_Templates
                             {
                                 try
                                 {
-                                    var client = new RestClient(ST_Server + "api/" + "DT_33_BIElementsSave?DelData=0");
+                                    var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_33_BIElementsSave?DelData=0");
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.POST);
                                     request.AddHeader("CID", BaseData_CountryCode);
@@ -1626,6 +1737,15 @@ namespace IDV_Document_Templates
                                     JsonBody += "\"" + "V15" + "\": " + "\"" + TRSel.Similarity + "\",";
                                     JsonBody += "\"" + "V16" + "\": " + "\"" + TRSel.OcrIndex + "\",";
                                     JsonBody += "\"" + "V17" + "\": " + "\"" + TRSel.OcrPosition + "\",";
+                                    JsonBody += "\"" + "V18" + "\": " + "\"" + BooltoDigit(TRSel.DataProcessing) + "\",";
+                                    JsonBody += "\"" + "V19" + "\": " + "\"" + TRSel.TypeCode + "\",";
+                                    JsonBody += "\"" + "V20" + "\": " + "\"" + TRSel.SubstringStart + "\",";
+                                    JsonBody += "\"" + "V21" + "\": " + "\"" + TRSel.SubstringLength + "\",";
+                                    JsonBody += "\"" + "V22" + "\": " + "\"" + BooltoDigit(TRSel.SubstringLeft) + "\",";
+                                    JsonBody += "\"" + "V23" + "\": " + "\"" + TRSel.InputFormat + "\",";
+                                    JsonBody += "\"" + "V24" + "\": " + "\"" + TRSel.InputFormatSeprator + "\",";
+                                    JsonBody += "\"" + "V25" + "\": " + "\"" + TRSel.OutputFormat + "\",";
+                                    JsonBody += "\"" + "V26" + "\": " + "\"" + TRSel.OutputFormatSeprator + "\",";
                                     JsonBody += "}";
                                     request.AddParameter("application/json", JsonBody, ParameterType.RequestBody);
                                     APIRes = client.Execute(request).Content.ToString();
@@ -1660,7 +1780,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_34_FIColorsSave?DelData=1");
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_34_FIColorsSave?DelData=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1697,7 +1817,7 @@ namespace IDV_Document_Templates
                             {
                                 try
                                 {
-                                    var client = new RestClient(ST_Server + "api/" + "DT_34_FIColorsSave?DelData=0");
+                                    var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_34_FIColorsSave?DelData=0");
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.POST);
                                     request.AddHeader("CID", BaseData_CountryCode);
@@ -1748,7 +1868,7 @@ namespace IDV_Document_Templates
                 {
                     try
                     {
-                        var client = new RestClient(ST_Server + "api/" + "DT_35_BIColorsSave?DelData=1");
+                        var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_35_BIColorsSave?DelData=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         request.AddHeader("CID", BaseData_CountryCode);
@@ -1785,7 +1905,7 @@ namespace IDV_Document_Templates
                             {
                                 try
                                 {
-                                    var client = new RestClient(ST_Server + "api/" + "DT_35_BIColorsSave?DelData=0");
+                                    var client = new RestClient(ST_Server + "api/DocBuilder/" + "DT_35_BIColorsSave?DelData=0");
                                     client.Timeout = -1;
                                     var request = new RestRequest(Method.POST);
                                     request.AddHeader("CID", BaseData_CountryCode);
@@ -1916,8 +2036,17 @@ namespace IDV_Document_Templates
                 P5_T11.Text = "";
                 P5_T12.Text = "";
                 P5_T13.Text = "";
+                P5_T14.Text = "";
+                P5_T15.Text = "";
+                P5_T16.Text = "";
+                P5_T17.Text = "";
+                P5_T18.Text = "";
+                P5_T19.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
+                P5_C3.Checked = false;
+                P5_C4.Checked = false;
+                P5_D1.SelectedIndex = 0;
                 ObjectLoad = false;
                 P5_Pan.Focus();
             }
@@ -1972,6 +2101,15 @@ namespace IDV_Document_Templates
                 LB.OutputTitle = "";
                 LB.Similarity = "100";
                 LB.OcrPosition = "L";
+                LB.DataProcessing = false;
+                LB.TypeCode = 1;
+                LB.SubstringStart = 0;
+                LB.SubstringLength = 0;
+                LB.SubstringLeft = false;
+                LB.InputFormat = "";
+                LB.InputFormatSeprator = "";
+                LB.OutputFormat = "";
+                LB.OutputFormatSeprator = "";
                 LB.Text = "";
                 LB.ForeColor = Color.Black;
                 LB.TransparentBackColor = Color.Red;
@@ -2083,8 +2221,17 @@ namespace IDV_Document_Templates
                 P5_T11.Text = "";
                 P5_T12.Text = "";
                 P5_T13.Text = "";
+                P5_T14.Text = "";
+                P5_T15.Text = "";
+                P5_T16.Text = "";
+                P5_T17.Text = "";
+                P5_T18.Text = "";
+                P5_T19.Text = "";
                 P5_C1.Checked = false;
                 P5_C2.Checked = false;
+                P5_C3.Checked = false;
+                P5_C4.Checked = false;
+                P5_D1.SelectedIndex = 0;
                 if (P5_SelObject != null)
                 {
                     P5_T1.Text = P5_SelObject.Left.ToString();
@@ -2100,8 +2247,24 @@ namespace IDV_Document_Templates
                     P5_T11.Text = P5_SelObject.Similarity;
                     P5_T12.Text = P5_SelObject.OcrIndex;
                     P5_T13.Text = P5_SelObject.OcrPosition;
+                    P5_T14.Text = P5_SelObject.SubstringStart.ToString();
+                    P5_T15.Text = P5_SelObject.SubstringLength.ToString();
+                    P5_T16.Text = P5_SelObject.InputFormat.Trim();
+                    P5_T17.Text = P5_SelObject.InputFormatSeprator;
+                    P5_T18.Text = P5_SelObject.OutputFormat.Trim();
+                    P5_T19.Text = P5_SelObject.OutputFormatSeprator;
                     P5_C1.Checked = P5_SelObject.OutputShow;
                     P5_C2.Checked = P5_SelObject.KeyActive;
+                    P5_C3.Checked = P5_SelObject.DataProcessing;
+                    P5_C4.Checked = P5_SelObject.SubstringLeft;
+                    try
+                    {
+                        P5_D1.SelectedIndex = P5_SelObject.TypeCode - 1;
+                    }
+                    catch (Exception)
+                    {
+                        P5_D1.SelectedIndex = 0;
+                    }
                 }
             }
             catch (Exception)
@@ -2208,6 +2371,48 @@ namespace IDV_Document_Templates
                 if (P5_SelObject != null)
                 {
                     P5_SelObject.KeyActive = P5_C2.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P5_C3_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P5_SelObject != null)
+                {
+                    P5_SelObject.DataProcessing = P5_C3.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P5_C4_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P5_SelObject != null)
+                {
+                    P5_SelObject.SubstringLeft = P5_C4.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P5_D1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P5_SelObject != null)
+                {
+                    P5_SelObject.TypeCode = P5_D1.SelectedIndex + 1;
                 }
             }
             catch (Exception)
@@ -2492,6 +2697,56 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P5_T14":
+                            {
+                                if ((TxVal >= 0) && (TxVal <= 9999))
+                                {
+                                    P5_SelObject.SubstringStart = TxVal;
+                                    ReloadND = true;
+                                }
+                                else
+                                {
+                                    P5_T14.Text = P5_SelObject.SubstringStart.ToString();
+                                }
+                                break;
+                            }
+                        case "P5_T15":
+                            {
+                                if ((TxVal >= 0) && (TxVal <= 9999))
+                                {
+                                    P5_SelObject.SubstringLength = TxVal;
+                                    ReloadND = true;
+                                }
+                                else
+                                {
+                                    P5_T15.Text = P5_SelObject.SubstringLength.ToString();
+                                }
+                                break;
+                            }
+                        case "P5_T16":
+                            {
+                                P5_SelObject.InputFormat = P5_T16.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P5_T17":
+                            {
+                                P5_SelObject.InputFormatSeprator = P5_T17.Text;
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P5_T18":
+                            {
+                                P5_SelObject.OutputFormat = P5_T18.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P5_T19":
+                            {
+                                P5_SelObject.OutputFormatSeprator = P5_T19.Text;
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -2525,8 +2780,17 @@ namespace IDV_Document_Templates
                         P5_T11.Text = P5_SelObject.Similarity;
                         P5_T12.Text = P5_SelObject.OcrIndex;
                         P5_T13.Text = P5_SelObject.OcrPosition;
+                        P5_T14.Text = P5_SelObject.SubstringStart.ToString();
+                        P5_T15.Text = P5_SelObject.SubstringLength.ToString();
+                        P5_T16.Text = P5_SelObject.InputFormat.ToString();
+                        P5_T17.Text = P5_SelObject.InputFormatSeprator.ToString();
+                        P5_T18.Text = P5_SelObject.OutputFormat.ToString();
+                        P5_T19.Text = P5_SelObject.OutputFormatSeprator.ToString();
                         P5_C1.Checked = P5_SelObject.OutputShow;
                         P5_C2.Checked = P5_SelObject.KeyActive;
+                        P5_C3.Checked = P5_SelObject.DataProcessing;
+                        P5_C4.Checked = P5_SelObject.SubstringLeft;
+                        try { P5_D1.SelectedIndex = P5_SelObject.TypeCode - 1; } catch (Exception) { P5_D1.SelectedIndex = 0; }
                     }
                 }
             }
@@ -2681,8 +2945,17 @@ namespace IDV_Document_Templates
                 P6_T11.Text = "";
                 P6_T12.Text = "";
                 P6_T13.Text = "";
+                P6_T14.Text = "";
+                P6_T15.Text = "";
+                P6_T16.Text = "";
+                P6_T17.Text = "";
+                P6_T18.Text = "";
+                P6_T19.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
+                P6_C3.Checked = false;
+                P6_C4.Checked = false;
+                P6_D1.SelectedIndex = 0;
                 ObjectLoad = false;
                 P6_Pan.Focus();
             }
@@ -2737,6 +3010,15 @@ namespace IDV_Document_Templates
                 LB.OutputTitle = "";
                 LB.Similarity = "100";
                 LB.OcrPosition = "L";
+                LB.DataProcessing = false;
+                LB.TypeCode = 1;
+                LB.SubstringStart = 0;
+                LB.SubstringLength = 0;
+                LB.SubstringLeft = false;
+                LB.InputFormat = "";
+                LB.InputFormatSeprator = "";
+                LB.OutputFormat = "";
+                LB.OutputFormatSeprator = "";
                 LB.Text = "";
                 LB.ForeColor = Color.Black;
                 LB.TransparentBackColor = Color.Red;
@@ -2848,8 +3130,17 @@ namespace IDV_Document_Templates
                 P6_T11.Text = "";
                 P6_T12.Text = "";
                 P6_T13.Text = "";
+                P6_T14.Text = "";
+                P6_T15.Text = "";
+                P6_T16.Text = "";
+                P6_T17.Text = "";
+                P6_T18.Text = "";
+                P6_T19.Text = "";
                 P6_C1.Checked = false;
                 P6_C2.Checked = false;
+                P6_C3.Checked = false;
+                P6_C4.Checked = false;
+                P6_D1.SelectedIndex = 0;
                 if (P6_SelObject != null)
                 {
                     P6_T1.Text = P6_SelObject.Left.ToString();
@@ -2865,8 +3156,24 @@ namespace IDV_Document_Templates
                     P6_T11.Text = P6_SelObject.Similarity;
                     P6_T12.Text = P6_SelObject.OcrIndex;
                     P6_T13.Text = P6_SelObject.OcrPosition;
+                    P6_T14.Text = P6_SelObject.SubstringStart.ToString();
+                    P6_T15.Text = P6_SelObject.SubstringLength.ToString();
+                    P6_T16.Text = P6_SelObject.InputFormat;
+                    P6_T17.Text = P6_SelObject.InputFormatSeprator;
+                    P6_T18.Text = P6_SelObject.OutputFormat;
+                    P6_T19.Text = P6_SelObject.OutputFormatSeprator;
                     P6_C1.Checked = P6_SelObject.OutputShow;
                     P6_C2.Checked = P6_SelObject.KeyActive;
+                    P6_C3.Checked = P6_SelObject.DataProcessing;
+                    P6_C4.Checked = P6_SelObject.SubstringLeft;
+                    try
+                    {
+                        P6_D1.SelectedIndex = P6_SelObject.TypeCode - 1;
+                    }
+                    catch (Exception)
+                    {
+                        P6_D1.SelectedIndex = 0;
+                    }
                 }
             }
             catch (Exception)
@@ -2973,6 +3280,48 @@ namespace IDV_Document_Templates
                 if (P6_SelObject != null)
                 {
                     P6_SelObject.KeyActive = P6_C2.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P6_C3_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P6_SelObject != null)
+                {
+                    P6_SelObject.DataProcessing = P6_C3.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P6_C4_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P6_SelObject != null)
+                {
+                    P6_SelObject.SubstringLeft = P6_C4.Checked;
+                }
+            }
+            catch (Exception)
+            { }
+        }
+        //==========================================================================
+        private void P6_D1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ObjectLoad == true) { return; }
+                if (P6_SelObject != null)
+                {
+                    P6_SelObject.TypeCode = P6_D1.SelectedIndex + 1;
                 }
             }
             catch (Exception)
@@ -3257,6 +3606,56 @@ namespace IDV_Document_Templates
                                 ReloadND = true;
                                 break;
                             }
+                        case "P6_T14":
+                            {
+                                if ((TxVal >= 0) && (TxVal <= 9999))
+                                {
+                                    P6_SelObject.SubstringStart = TxVal;
+                                    ReloadND = true;
+                                }
+                                else
+                                {
+                                    P6_T14.Text = P6_SelObject.SubstringStart.ToString();
+                                }
+                                break;
+                            }
+                        case "P6_T15":
+                            {
+                                if ((TxVal >= 0) && (TxVal <= 9999))
+                                {
+                                    P6_SelObject.SubstringLength = TxVal;
+                                    ReloadND = true;
+                                }
+                                else
+                                {
+                                    P6_T15.Text = P6_SelObject.SubstringLength.ToString();
+                                }
+                                break;
+                            }
+                        case "P6_T16":
+                            {
+                                P6_SelObject.InputFormat = P6_T16.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P6_T17":
+                            {
+                                P6_SelObject.InputFormatSeprator = P6_T17.Text;
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P6_T18":
+                            {
+                                P6_SelObject.OutputFormat = P6_T18.Text.Trim();
+                                ReloadND = true;
+                                break;
+                            }
+                        case "P6_T19":
+                            {
+                                P6_SelObject.OutputFormatSeprator = P6_T19.Text;
+                                ReloadND = true;
+                                break;
+                            }
                     }
                     if (ReloadND == true)
                     {
@@ -3290,8 +3689,24 @@ namespace IDV_Document_Templates
                         P6_T11.Text = P6_SelObject.Similarity;
                         P6_T12.Text = P6_SelObject.OcrIndex;
                         P6_T13.Text = P6_SelObject.OcrPosition;
+                        P6_T14.Text = P6_SelObject.SubstringStart.ToString();
+                        P6_T15.Text = P6_SelObject.SubstringLength.ToString();
+                        P6_T16.Text = P6_SelObject.InputFormat;
+                        P6_T17.Text = P6_SelObject.InputFormatSeprator;
+                        P6_T18.Text = P6_SelObject.OutputFormat;
+                        P6_T19.Text = P6_SelObject.OutputFormatSeprator;
                         P6_C1.Checked = P6_SelObject.OutputShow;
                         P6_C2.Checked = P6_SelObject.KeyActive;
+                        P6_C3.Checked = P6_SelObject.DataProcessing;
+                        P6_C3.Checked = P6_SelObject.SubstringLeft;
+                        try
+                        {
+                            P6_D1.SelectedIndex = P6_SelObject.TypeCode - 1;
+                        }
+                        catch (Exception)
+                        {
+                            P6_D1.SelectedIndex = 0;
+                        }
                     }
                 }
             }

@@ -137,7 +137,7 @@ namespace IDV_Document_Templates
                 {
                     SRVR = ConfigurationSettings.AppSettings["IDVPD"].ToString().Trim() + "/";
                 }
-                var client = new RestClient(SRVR + "api/" + "DT_01_Authentication" + "?" + "USN=" + textBox1.Text + "&PSW=" + textBox2.Text);
+                var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_01_Authentication" + "?" + "USN=" + textBox1.Text + "&PSW=" + textBox2.Text);
                 client.Timeout = -1;
                 var request = new RestRequest(Method.POST);
                 IRestResponse response = client.Execute(request);

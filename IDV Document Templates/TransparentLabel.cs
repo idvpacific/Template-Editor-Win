@@ -152,5 +152,95 @@ namespace IDV_Document_Templates
                 ocrposition = value;
             }
         }
+
+        private bool data_processing  = false;
+        public bool DataProcessing
+        {
+            get { return data_processing; }
+            set
+            {
+                data_processing = value;
+            }
+        }
+
+        private int typecode = 1;
+        public int TypeCode
+        {
+            get { return typecode; }
+            set
+            {
+                typecode = value;
+            }
+        }
+
+        private int substring_start = 0;
+        public int SubstringStart
+        {
+            get { return substring_start; }
+            set
+            {
+                substring_start = value;
+            }
+        }
+
+        private int substring_length = 0;
+        public int SubstringLength
+        {
+            get { return substring_length; }
+            set
+            {
+                substring_length = value;
+            }
+        }
+
+        private bool substring_left = false;
+        public bool SubstringLeft
+        {
+            get { return substring_left; }
+            set
+            {
+                substring_left = value;
+            }
+        }
+
+        private string inputformat = "";
+        public string InputFormat
+        {
+            get { return inputformat; }
+            set
+            {
+                inputformat = value;
+            }
+        }
+
+        private string inputformatseprator = "";
+        public string InputFormatSeprator
+        {
+            get { return inputformatseprator; }
+            set
+            {
+                inputformatseprator = value;
+            }
+        }
+
+        private string Outputformat = "";
+        public string OutputFormat
+        {
+            get { return Outputformat; }
+            set
+            {
+                Outputformat = value;
+            }
+        }
+
+        private string Outputformatseprator = "";
+        public string OutputFormatSeprator
+        {
+            get { return Outputformatseprator; }
+            set
+            {
+                Outputformatseprator = value;
+            }
+        }
     }
 }

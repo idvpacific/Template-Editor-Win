@@ -287,7 +287,7 @@ namespace IDV_Document_Templates
                                         try
                                         {
                                             string SRVR = ST_Server;
-                                            var client = new RestClient(SRVR + "api/" + "DT_14_ReloadDocType" + "?" + "TP=1");
+                                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_14_ReloadDocType" + "?" + "TP=1");
                                             client.Timeout = -1;
                                             var request = new RestRequest(Method.POST);
                                             IRestResponse response = client.Execute(request);
@@ -405,7 +405,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_05_StatusCountry" + "?" + "CID=" + dataGridView1.SelectedRows[0].Cells[0].Value.ToString().Trim());
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_05_StatusCountry" + "?" + "CID=" + dataGridView1.SelectedRows[0].Cells[0].Value.ToString().Trim());
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);
@@ -471,7 +471,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_03_ReloadCountry" + "?" + "TP=1");
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_03_ReloadCountry" + "?" + "TP=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -544,7 +544,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_07_ReloadState" + "?" + "CID=" + CID.ToString());
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_07_ReloadState" + "?" + "CID=" + CID.ToString());
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -633,7 +633,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_09_StatusState" + "?" + "SID=" + dataGridView2.SelectedRows[0].Cells[0].Value.ToString().Trim());
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_09_StatusState" + "?" + "SID=" + dataGridView2.SelectedRows[0].Cells[0].Value.ToString().Trim());
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);
@@ -772,7 +772,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_13_StatusDocumentType" + "?" + "DID=" + dataGridView3.SelectedRows[0].Cells[0].Value.ToString().Trim());
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_13_StatusDocumentType" + "?" + "DID=" + dataGridView3.SelectedRows[0].Cells[0].Value.ToString().Trim());
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);
@@ -837,7 +837,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_11_ReloadDocumentType" + "?" + "TP=1");
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_11_ReloadDocumentType" + "?" + "TP=1");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -905,7 +905,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_15_ReloadStateCMB" + "?" + "CID=" + CID);
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_15_ReloadStateCMB" + "?" + "CID=" + CID);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -989,7 +989,7 @@ namespace IDV_Document_Templates
                     try
                     {
                         string SRVR = ST_Server;
-                        var client = new RestClient(SRVR + "api/" + "DT_17_ReloadDocument" + "?" + "CID=" + CID + "&SID=" + SID + "&DTID=" + DTID);
+                        var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_17_ReloadDocument" + "?" + "CID=" + CID + "&SID=" + SID + "&DTID=" + DTID);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         IRestResponse response = client.Execute(request);
@@ -1060,7 +1060,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_19_StatusDocument" + "?" + "DID=" + dataGridView4.SelectedRows[0].Cells[1].Value.ToString().Trim());
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_19_StatusDocument" + "?" + "DID=" + dataGridView4.SelectedRows[0].Cells[1].Value.ToString().Trim());
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);

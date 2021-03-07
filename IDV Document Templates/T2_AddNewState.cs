@@ -70,7 +70,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ParetnFrm.ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_06_AddState" + "?CID=" + Country_ID + "&SN=" + TextBox1.Text + "&ST=" + TextBox2.Text + "&UI=" + ParetnFrm.ST_UID);
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_06_AddState" + "?CID=" + Country_ID + "&SN=" + TextBox1.Text + "&ST=" + TextBox2.Text + "&UI=" + ParetnFrm.ST_UID);
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);

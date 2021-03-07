@@ -71,7 +71,7 @@ namespace IDV_Document_Templates
                         try
                         {
                             string SRVR = ParetnFrm.ST_Server;
-                            var client = new RestClient(SRVR + "api/" + "DT_18_EditDocument" + "?" + "CID=" + CID + "&SID=" + SID + "&DTID=" + DTID + "&DID=" + DID + "&DN=" + TextBox1.Text + "&DC=" + TextBox2.Text);
+                            var client = new RestClient(SRVR + "api/DocBuilder/" + "DT_18_EditDocument" + "?" + "CID=" + CID + "&SID=" + SID + "&DTID=" + DTID + "&DID=" + DID + "&DN=" + TextBox1.Text + "&DC=" + TextBox2.Text);
                             client.Timeout = -1;
                             var request = new RestRequest(Method.POST);
                             IRestResponse response = client.Execute(request);
